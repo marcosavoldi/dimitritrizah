@@ -1,0 +1,87 @@
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --color-primary: #153243; /* Dark Blue */
+  --color-secondary: #C1BDB3; /* Light Beige/Grey */
+  --color-text: #153243;
+  --color-bg: #C1BDB3; /* Light Beige/Grey */
+  
+  --font-heading: 'Cinzel', serif;
+  --font-body: 'Cormorant Garamond', serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: 1.3rem; /* Further increased size */
+  font-weight: 600; /* Increased weight for better legibility */
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color: var(--color-heading); /* Slightly darker green-gray */
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: var(--font-body);
+  cursor: pointer;
+}
+
+.section-padding {
+  padding: 4rem 1.5rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Hero Image Responsive Styles */
+.hero-image-wrapper {
+  width: 100%;
+  height: auto;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: none;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.hero-image-wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (min-width: 1024px) {
+  .hero-image-wrapper {
+    max-width: 600px; /* Limit width on desktop to prevent huge height */
+    max-height: 80vh; /* Also limit height directly just in case */
+  }
+  
+  .hero-image-wrapper img {
+    object-fit: contain;
+    max-height: 80vh;
+  }
+}
