@@ -47,7 +47,7 @@ const LanguageSelector: React.FC = () => {
         <span style={{ fontSize: '4rem', filter: 'drop-shadow(0 4px 6px rgba(0,0,0,0.1))' }}>🇮🇹</span>
         <div style={{ textAlign: 'center' }}>
           <h1 style={{ 
-            fontFamily: 'var(--font-heading)', 
+            fontFamily: "'Playfair Display', serif", 
             color: 'var(--color-primary)', 
             fontSize: '2.5rem', 
             margin: 0,
@@ -89,7 +89,7 @@ const LanguageSelector: React.FC = () => {
       >
         <div style={{ textAlign: 'center' }}>
           <h1 style={{ 
-            fontFamily: 'var(--font-heading)', 
+            fontFamily: "'Playfair Display', serif", 
             color: 'var(--color-primary)', 
             fontSize: '2.5rem', 
             margin: 0,

@@ -3,13 +3,13 @@ html {
 }
 
 :root {
-  --color-primary: #153243; /* Dark Blue */
-  --color-secondary: #C1BDB3; /* Light Beige/Grey */
-  --color-text: #153243;
-  --color-bg: #C1BDB3; /* Light Beige/Grey */
+  --color-primary: #0A2342; /* Deep Navy */
+  --color-secondary: #EDF2F4; /* Platinum/White */
+  --color-text: #1D3557; /* Navy Text */
+  --color-bg: #EDF2F4; /* Platinum/White */
   
-  --font-heading: 'Cinzel', serif;
-  --font-body: 'Cormorant Garamond', serif;
+  --font-heading: 'Pinyon Script', cursive;
+  --font-body: 'Crimson Text', serif;
 }
 
 * {

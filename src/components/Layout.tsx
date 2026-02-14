@@ -4,7 +4,7 @@ import { FaKey } from 'react-icons/fa';
 import AdminModal from './AdminModal';
 
 
-import ThemePlayground from './ThemePlayground';
+
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -40,7 +40,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
 
   return (
     <div className="layout" style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
-      <ThemePlayground />
+
 
       {/* Header with Language Switcher */}
       <header style={{

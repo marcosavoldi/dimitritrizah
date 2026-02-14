@@ -35,26 +35,26 @@ interface ThemeContextType {
 // 1. Define Font Options
 const fontOptions: FontPair[] = [
   {
-    id: '1',
-    name: 'Cinzel & Cormorant',
-    heading: "'Cinzel', serif",
-    body: "'Cormorant Garamond', serif",
+    id: 'royal',
+    name: 'Pinyon & Crimson',
+    heading: "'Pinyon Script', cursive",
+    body: "'Crimson Text', serif",
   },
 ];
 
 // 2. Define Palette Options
 const paletteOptions: Palette[] = [
   {
-    id: 'palette-1',
-    name: '153243 + c1bdb3',
+    id: 'navy_gold',
+    name: 'Royal Navy',
     colors: {
-      primary: '#153243',      // Dark Blue/Grey
-      secondary: '#c1bdb3',    // Light Grey/Beige (Background-ish)
-      complementary: '#b4b8ab', // Slightly greener grey for nuance
-      accent: '#284b63',       // Lighter Blue for accents
-      text: '#153243',         // Dark text
-      bg: '#c1bdb3',           // The light color as BG
-      headingColor: '#153243',
+        primary: '#0A2342', // Deep Navy
+        secondary: '#EDF2F4', // Platinum/White (Same as BG)
+        complementary: '#8D99AE', // Greyish Blue
+        accent: '#D90429',       // Reddish accent (optional adjustment, likely not used much) - actually stick to the previous defined navy ones or safe defaults
+        text: '#1D3557', // Navy
+        bg: '#EDF2F4', // Platinum
+        headingColor: '#0A2342',
     },
   },
 ];
