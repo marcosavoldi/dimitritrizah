@@ -183,8 +183,7 @@ const AdminModal: React.FC<AdminModalProps> = ({ isOpen, onClose }) => {
 
     // Prepare Data for Table
     const tableData = rsvps.map(rsvp => [
-      rsvp.firstName,
-      rsvp.lastName,
+      `${rsvp.firstName} ${rsvp.lastName}`.trim(),
       rsvp.intolerances || '-',
       rsvp.allergies || '-',
       rsvp.notes || '-'
@@ -192,7 +191,7 @@ const AdminModal: React.FC<AdminModalProps> = ({ isOpen, onClose }) => {
 
     // Generate Table
     autoTable(doc, {
-      head: [['First Name', 'Last Name', 'Intolerances', 'Allergies', 'Notes']],
+      head: [['Guest Name', 'Intolerances', 'Allergies', 'Notes']],
       body: tableData,
       startY: 40,
       styles: { fontSize: 9, cellPadding: 3 },
