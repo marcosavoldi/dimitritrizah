@@ -55,6 +55,22 @@ export interface Translation {
     shellfish: string;
     other: string;
     specify: string;
+    // New Family RSVP
+    adults: string;
+    children05: string;
+    children610: string;
+    mainGuestName: string;
+    guestName: string;
+    guest: string;
+    guestsHeader: string;
+    removeGuest: string;
+    addGuest: string;
+    totalGuests: string;
+    dietaryNeeds: string;
+    dietaryNeedsButton: string;
+    dietaryNeedsButtonActive: string;
+    validationErrorNames: string;
+    validationErrorMainName: string;
 }
 
 export const translations: Record<Language, Translation> = {
@@ -111,12 +127,28 @@ export const translations: Record<Language, Translation> = {
         fish: 'Pesce',
         shellfish: 'Crostacei',
         other: 'Altro (specificare)',
-        specify: 'Specificare...'
+        specify: 'Specificare...',
+        // New Family RSVP
+        adults: 'Adulti',
+        children05: 'Bambini (0-5 anni)',
+        children610: 'Bambini (6-10 anni)',
+        mainGuestName: 'Nome e Cognome (Referente)',
+        guestName: 'Nome e Cognome',
+        guest: 'Ospite',
+        guestsHeader: 'Ospiti',
+        removeGuest: 'Rimuovi',
+        addGuest: 'Aggiungi Ospite',
+        totalGuests: 'Totale Ospiti',
+        dietaryNeeds: 'Ha intolleranze o allergie?',
+        dietaryNeedsButton: 'Segnala Allergie/Intolleranze',
+        dietaryNeedsButtonActive: 'Allergie Segnalate',
+        validationErrorNames: 'Per favore, inserisci i nomi di tutti gli ospiti.',
+        validationErrorMainName: 'Per favore, inserisci il nome del referente.',
     },
     en: {
         heroDate: 'April 18, 2026',
         scrollDown: '',
-        introText: 'In view of our wedding, we have created this site to accompany you step by step towards the big day.',
+        introText: 'In anticipation of our wedding, we created this site to guide you towards the big day.',
         confirmBy: 'To help us organize everything better, please confirm your attendance by March 15, 2026 using the form at the bottom of the page.',
         importantTitle: 'Important Information ⚠️',
         noKidsPolicy: 'Your children are very important to us, but for this day there will be no entertainment dedicated to the little ones. If possible, we invite you to leave them with grandparents, babysitters or friends, so you can relax and enjoy the party without worries... toasting with us!',
@@ -166,6 +198,22 @@ export const translations: Record<Language, Translation> = {
         fish: 'Fish',
         shellfish: 'Shellfish',
         other: 'Other (specify)',
-        specify: 'Specify...'
+        specify: 'Specify...',
+        // New Family RSVP
+        adults: 'Adults',
+        children05: 'Children (0-5 years)',
+        children610: 'Children (6-10 years)',
+        mainGuestName: 'Name and Surname (Main Contact)',
+        guestName: 'Name and Surname',
+        guest: 'Guest',
+        guestsHeader: 'Guests',
+        removeGuest: 'Remove',
+        addGuest: 'Add Guest',
+        totalGuests: 'Total Guests',
+        dietaryNeeds: 'Do you have dietary needs?',
+        dietaryNeedsButton: 'Report Allergies/Intolerances',
+        dietaryNeedsButtonActive: 'Allergies Reported',
+        validationErrorNames: 'Please enter names for all guests.',
+        validationErrorMainName: 'Please enter the main contact name.',
     }
 };
