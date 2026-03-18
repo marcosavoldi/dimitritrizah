@@ -315,7 +315,7 @@ const RSVPForm: React.FC = () => {
                 {t.deadlinePassedMessage}
               </div>
               <div style={{ opacity: 0.5, pointerEvents: 'none', filter: 'grayscale(50%)' }}>
-                <form onSubmit={(e) => e.preventDefault()} style={{ maxWidth: '600px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+                <form onSubmit={(e) => { e.preventDefault(); void handleSubmit; }} style={{ maxWidth: '600px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
 
               {/* --- STEP 1: Main Info & Counts --- */}
               <div style={cardStyle}>
