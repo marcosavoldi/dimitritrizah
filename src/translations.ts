@@ -71,6 +71,7 @@ export interface Translation {
     dietaryNeedsButtonActive: string;
     validationErrorNames: string;
     validationErrorMainName: string;
+    deadlinePassedMessage: string;
 }
 
 export const translations: Record<Language, Translation> = {
@@ -144,6 +145,7 @@ export const translations: Record<Language, Translation> = {
         dietaryNeedsButtonActive: 'Allergie Segnalate',
         validationErrorNames: 'Per favore, inserisci i nomi di tutti gli ospiti.',
         validationErrorMainName: 'Per favore, inserisci il nome del referente.',
+        deadlinePassedMessage: 'Non puoi più comunicare la tua partecipazione tramite il form perchè la data di scadenza è stata superata. Per ulteriori informazioni contatta direttamente gli sposi.',
     },
     en: {
         heroDate: 'April 18, 2026',
@@ -215,5 +217,6 @@ export const translations: Record<Language, Translation> = {
         dietaryNeedsButtonActive: 'Allergies Reported',
         validationErrorNames: 'Please enter names for all guests.',
         validationErrorMainName: 'Please enter the main contact name.',
+        deadlinePassedMessage: 'You can no longer communicate your participation through the form because the deadline has passed. For further information, please contact the couple directly.',
     }
 };

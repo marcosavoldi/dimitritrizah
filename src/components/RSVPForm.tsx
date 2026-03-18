@@ -297,7 +297,25 @@ const RSVPForm: React.FC = () => {
               <button onClick={() => setStatus('idle')} style={buttonStyle}>{t.rsvpAnother}</button>
             </div>
           ) : (
-            <form onSubmit={handleSubmit} style={{ maxWidth: '600px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+            <>
+              <div style={{
+                backgroundColor: 'rgba(255, 255, 255, 0.9)',
+                border: '2px solid var(--color-primary)',
+                borderRadius: '12px',
+                padding: '1.5rem',
+                textAlign: 'center',
+                marginBottom: '2rem',
+                color: 'var(--color-primary)',
+                fontWeight: '600',
+                fontSize: '1.1rem',
+                boxShadow: '0 4px 15px rgba(0,0,0,0.1)',
+                maxWidth: '600px',
+                margin: '0 auto 2rem auto'
+              }}>
+                {t.deadlinePassedMessage}
+              </div>
+              <div style={{ opacity: 0.5, pointerEvents: 'none', filter: 'grayscale(50%)' }}>
+                <form onSubmit={(e) => e.preventDefault()} style={{ maxWidth: '600px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
 
               {/* --- STEP 1: Main Info & Counts --- */}
               <div style={cardStyle}>
@@ -408,8 +426,9 @@ const RSVPForm: React.FC = () => {
               >
                 {status === 'submitting' ? t.submitting : t.submit}
               </button>
-
             </form>
+              </div>
+            </>
           )}
         </motion.div>
       </div>
